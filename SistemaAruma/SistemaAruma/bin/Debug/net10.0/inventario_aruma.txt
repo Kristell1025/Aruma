@@ -1,0 +1,20 @@
+P001;Labial Matte Maybelline SuperStay;Maquillaje;45.9;25
+P002;Base Liquid Fit Me Maybelline;Maquillaje;52;18
+P003;Máscara de Pestañas Lash Sensational;Maquillaje;39.9;30
+P004;Crema Hidratante Cerave Lotion;Cuidado Facial;68.5;15
+P005;Limpiador Facial Gel Cerave Foaming;Cuidado Facial;74.9;12
+P006;Sérum Ácido Hialurónico L'Oréal Revitalift;Cuidado Facial;85;20
+P007;Bloqueador Solar Isdin Fotoprotector 50+;Protector Solar;99;22
+P008;Champú Reparación Intensiva Pantene;Cuidado Capilar;24.5;40
+P009;Mascarilla Capilar Aceite de Argan Ogx;Cuidado Capilar;42;14
+P010;Agua Micelar Garnier Todo en 1;Cuidado Facial;32.9;35
+P011;Delineador Líquido Tattoo Liner Maybelline;Maquillaje;38.9;20
+P012;Corrector Fit Me Maybelline;Maquillaje;35;25
+P013;Rubor Líquido Rare Beauty Soft Pinch;Maquillaje;115;10
+P014;Polvo Traslúcido Laura Mercier;Maquillaje;180;8
+P015;Gel Limpiador Effaclar La Roche-Posay;Cuidado Facial;89.9;18
+P016;Sérum Niacinamida The Ordinary 10%;Cuidado Facial;55;30
+P017;Protector Solar Fusion Water Isdin SPF 50;Protector Solar;105;16
+P018;Tónico Exfoliante Glow Tonic Pixi;Cuidado Facial;78;12
+P019;Aceite Extraordinario Elvive L'Oréal;Cuidado Capilar;36.5;28
+P020;Bálsamo Labial Carmex Classic;Cuidado Facial;18.9;50

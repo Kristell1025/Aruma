@@ -1,0 +1,15 @@
+C:\Aruma\SistemaAruma\SistemaAruma\bin\Debug\net10.0\SistemaAruma.exe
+C:\Aruma\SistemaAruma\SistemaAruma\bin\Debug\net10.0\SistemaAruma.deps.json
+C:\Aruma\SistemaAruma\SistemaAruma\bin\Debug\net10.0\SistemaAruma.runtimeconfig.json
+C:\Aruma\SistemaAruma\SistemaAruma\bin\Debug\net10.0\SistemaAruma.dll
+C:\Aruma\SistemaAruma\SistemaAruma\bin\Debug\net10.0\SistemaAruma.pdb
+C:\Aruma\SistemaAruma\SistemaAruma\obj\Debug\net10.0\SistemaAruma.GeneratedMSBuildEditorConfig.editorconfig
+C:\Aruma\SistemaAruma\SistemaAruma\obj\Debug\net10.0\SistemaAruma.AssemblyInfoInputs.cache
+C:\Aruma\SistemaAruma\SistemaAruma\obj\Debug\net10.0\SistemaAruma.AssemblyInfo.cs
+C:\Aruma\SistemaAruma\SistemaAruma\obj\Debug\net10.0\SistemaAruma.csproj.CoreCompileInputs.cache
+C:\Aruma\SistemaAruma\SistemaAruma\obj\Debug\net10.0\SistemaAruma.dll
+C:\Aruma\SistemaAruma\SistemaAruma\obj\Debug\net10.0\refint\SistemaAruma.dll
+C:\Aruma\SistemaAruma\SistemaAruma\obj\Debug\net10.0\SistemaAruma.pdb
+C:\Aruma\SistemaAruma\SistemaAruma\obj\Debug\net10.0\SistemaAruma.genruntimeconfig.cache
+C:\Aruma\SistemaAruma\SistemaAruma\obj\Debug\net10.0\ref\SistemaAruma.dll
+C:\Aruma\SistemaAruma\SistemaAruma\obj\Debug\net10.0\SistemaA.DB6001C3.Up2Date
