@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Proyecto Aruma\\Aruma\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D1E03FEC-55B1-439C-A45A-5141CD31947C}|Aruma\\Aruma.csproj|c:\\proyecto aruma\\aruma\\aruma\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1E03FEC-55B1-439C-A45A-5141CD31947C}|Aruma\\Aruma.csproj|solutionrelative:aruma\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Proyecto Aruma\\Aruma\\Aruma\\Program.cs",
+              "RelativeDocumentMoniker": "Aruma\\Program.cs",
+              "ToolTip": "C:\\Proyecto Aruma\\Aruma\\Aruma\\Program.cs",
+              "RelativeToolTip": "Aruma\\Program.cs",
+              "ViewState": "AgIAAKYAAAAAAAAAAAA2wMsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T17:05:18.012Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

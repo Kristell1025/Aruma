@@ -1,0 +1,15 @@
+C:\Proyecto Aruma\Aruma\Aruma\bin\Debug\net10.0\Aruma.exe
+C:\Proyecto Aruma\Aruma\Aruma\bin\Debug\net10.0\Aruma.deps.json
+C:\Proyecto Aruma\Aruma\Aruma\bin\Debug\net10.0\Aruma.runtimeconfig.json
+C:\Proyecto Aruma\Aruma\Aruma\bin\Debug\net10.0\Aruma.dll
+C:\Proyecto Aruma\Aruma\Aruma\bin\Debug\net10.0\Aruma.pdb
+C:\Proyecto Aruma\Aruma\Aruma\obj\Debug\net10.0\Aruma.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyecto Aruma\Aruma\Aruma\obj\Debug\net10.0\Aruma.AssemblyInfoInputs.cache
+C:\Proyecto Aruma\Aruma\Aruma\obj\Debug\net10.0\Aruma.AssemblyInfo.cs
+C:\Proyecto Aruma\Aruma\Aruma\obj\Debug\net10.0\Aruma.csproj.CoreCompileInputs.cache
+C:\Proyecto Aruma\Aruma\Aruma\obj\Debug\net10.0\Aruma.dll
+C:\Proyecto Aruma\Aruma\Aruma\obj\Debug\net10.0\refint\Aruma.dll
+C:\Proyecto Aruma\Aruma\Aruma\obj\Debug\net10.0\Aruma.pdb
+C:\Proyecto Aruma\Aruma\Aruma\obj\Debug\net10.0\Aruma.genruntimeconfig.cache
+C:\Proyecto Aruma\Aruma\Aruma\obj\Debug\net10.0\ref\Aruma.dll
+C:\Proyecto Aruma\Aruma\Aruma\obj\Debug\net10.0\Aruma.csproj.Up2Date
