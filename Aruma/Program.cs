@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 
 namespace SEM5_C_SistemaAruma
@@ -102,6 +102,7 @@ namespace SEM5_C_SistemaAruma
                 }
                 actual = actual.Siguiente;
             }
+
             if (!encontrado)
             {
                 Console.WriteLine("No se encontraron productos que coincidan con la búsqueda.");
@@ -111,6 +112,7 @@ namespace SEM5_C_SistemaAruma
         public bool EliminarPorCodigo(string codigo)
         {
             if (cabeza == null) return false;
+
             if (cabeza.Codigo.Equals(codigo, StringComparison.OrdinalIgnoreCase))
             {
                 cabeza = cabeza.Siguiente;
@@ -144,7 +146,11 @@ namespace SEM5_C_SistemaAruma
                 {
                     if (actual.Precio > actual.Siguiente.Precio)
                     {
-                        string tempCod = actual.Codigo; string tempNom = actual.Nombre; string tempCat = actual.Categoria; double tempPre = actual.Precio; int tempSto = actual.Stock;
+                        string tempCod = actual.Codigo;
+                        string tempNom = actual.Nombre;
+                        string tempCat = actual.Categoria;
+                        double tempPre = actual.Precio;
+                        int tempSto = actual.Stock;
 
                         actual.Codigo = actual.Siguiente.Codigo;
                         actual.Nombre = actual.Siguiente.Nombre;
@@ -164,6 +170,7 @@ namespace SEM5_C_SistemaAruma
                 }
             } while (intercambiado);
         }
+
         public void OrdenarPorPrecioSeleccion()
         {
             if (cabeza == null || cabeza.Siguiente == null) return;
@@ -185,7 +192,11 @@ namespace SEM5_C_SistemaAruma
 
                 if (min != i)
                 {
-                    string tempCod = i.Codigo; string tempNom = i.Nombre; string tempCat = i.Categoria; double tempPre = i.Precio; int tempSto = i.Stock;
+                    string tempCod = i.Codigo;
+                    string tempNom = i.Nombre;
+                    string tempCat = i.Categoria;
+                    double tempPre = i.Precio;
+                    int tempSto = i.Stock;
 
                     i.Codigo = min.Codigo;
                     i.Nombre = min.Nombre;
@@ -202,6 +213,7 @@ namespace SEM5_C_SistemaAruma
                 i = i.Siguiente;
             }
         }
+
         public void GuardarEnArchivo(string ruta)
         {
             using (StreamWriter sw = new StreamWriter(ruta))
@@ -214,6 +226,7 @@ namespace SEM5_C_SistemaAruma
                 }
             }
         }
+
         public void CargarDeArchivo(string ruta)
         {
             if (File.Exists(ruta))
@@ -233,9 +246,57 @@ namespace SEM5_C_SistemaAruma
                 }
             }
         }
+
+        // 3. MÉTODOS RECURSIVOS
+
+        // Mostrar todos los productos recursivamente
+        public void MostrarRecursivo()
+        {
+            MostrarRecursivoAux(cabeza);
+        }
+
+        private void MostrarRecursivoAux(Producto actual)
+        {
+            if (actual == null)
+                return;
+
+            Console.WriteLine(actual.ToString());
+            MostrarRecursivoAux(actual.Siguiente);
+        }
+
+        // Buscar un producto por código recursivamente
+        public Producto BuscarRecursivo(string codigo)
+        {
+            return BuscarRecursivoAux(cabeza, codigo);
+        }
+
+        private Producto BuscarRecursivoAux(Producto actual, string codigo)
+        {
+            if (actual == null)
+                return null;
+
+            if (actual.Codigo.Equals(codigo, StringComparison.OrdinalIgnoreCase))
+                return actual;
+
+            return BuscarRecursivoAux(actual.Siguiente, codigo);
+        }
+
+        // Contar los productos recursivamente
+        public int ContarProductosRecursivo()
+        {
+            return ContarProductosAux(cabeza);
+        }
+
+        private int ContarProductosAux(Producto actual)
+        {
+            if (actual == null)
+                return 0;
+
+            return 1 + ContarProductosAux(actual.Siguiente);
+        }
     }
 
-    // 3. CLASE MENUSISTEMA
+    // 4. CLASE MENUSISTEMA
     public class MenuSistema
     {
         public static string GlobalNombreSistema = "Sistema de Gestión Aruma - Módulo Principal";
@@ -248,6 +309,7 @@ namespace SEM5_C_SistemaAruma
             inventario = new Inventario();
             inventario.CargarDeArchivo(archivoDatos);
         }
+
         public bool ValidarYAplicarDescuento(ref double precioOriginal, double porcentajeDescuento)
         {
             if (porcentajeDescuento > 0 && porcentajeDescuento <= 100)
@@ -257,6 +319,7 @@ namespace SEM5_C_SistemaAruma
             }
             return false;
         }
+
         public void MostrarMenu()
         {
             int opcion = 0;
@@ -289,6 +352,7 @@ namespace SEM5_C_SistemaAruma
                 }
             } while (opcion != 9);
         }
+
         private void EjecutarOpcion(int opcion)
         {
             Console.Clear();
@@ -297,36 +361,45 @@ namespace SEM5_C_SistemaAruma
                 case 1:
                     RegistrarProducto();
                     break;
+
                 case 2:
                     BuscarProducto();
                     break;
+
                 case 3:
                     ModificarProducto();
                     break;
+
                 case 4:
                     EliminarProducto();
                     break;
+
                 case 5:
                     Console.WriteLine("--- INVENTARIO ACTUAL ---");
                     inventario.MostrarTodos();
                     break;
+
                 case 6:
                     RegistrarVenta();
                     break;
+
                 case 7:
                     Console.WriteLine("--- ORDENAMIENTO POR PRECIO (BURBUJA) ---");
                     inventario.OrdenarPorPrecioBurbuja();
                     inventario.MostrarTodos();
                     break;
+
                 case 8:
                     Console.WriteLine("--- ORDENAMIENTO POR PRECIO (SELECCIÓN) ---");
                     inventario.OrdenarPorPrecioSeleccion();
                     inventario.MostrarTodos();
                     break;
+
                 case 9:
                     inventario.GuardarEnArchivo(archivoDatos);
                     Console.WriteLine("Datos guardados. Saliendo...");
                     break;
+
                 default:
                     Console.WriteLine("Opción no válida.");
                     break;
@@ -338,26 +411,36 @@ namespace SEM5_C_SistemaAruma
                 Console.ReadKey();
             }
         }
+
         private void RegistrarProducto()
         {
             Console.WriteLine("--- REGISTRAR NUEVO PRODUCTO ---");
             Console.Write("Código: ");
             string codigo = Console.ReadLine();
+
             if (inventario.BuscarPorCodigo(codigo) != null)
             {
                 Console.WriteLine("Error: El código ya existe.");
                 return;
             }
+
             Console.Write("Nombre: ");
             string nombre = Console.ReadLine();
+
             Console.Write("Categoría: ");
             string categoria = Console.ReadLine();
 
             double precio;
-            do { Console.Write("Precio (>0): "); } while (!double.TryParse(Console.ReadLine(), out precio) || precio <= 0);
+            do
+            {
+                Console.Write("Precio (>0): ");
+            } while (!double.TryParse(Console.ReadLine(), out precio) || precio <= 0);
 
             int stock;
-            do { Console.Write("Stock (>=0): "); } while (!int.TryParse(Console.ReadLine(), out stock) || stock < 0);
+            do
+            {
+                Console.Write("Stock (>=0): ");
+            } while (!int.TryParse(Console.ReadLine(), out stock) || stock < 0);
 
             inventario.AgregarProducto(new Producto(codigo, nombre, categoria, precio, stock));
             inventario.GuardarEnArchivo(archivoDatos);
@@ -371,31 +454,43 @@ namespace SEM5_C_SistemaAruma
             string criterio = Console.ReadLine();
             inventario.BuscarPorNombreOCategoria(criterio);
         }
+
         private void ModificarProducto()
         {
             Console.WriteLine("--- MODIFICAR PRODUCTO ---");
             Console.Write("Código del producto a modificar: ");
             string codigo = Console.ReadLine();
+
             Producto p = inventario.BuscarPorCodigo(codigo);
-            if (p == null) { Console.WriteLine("No encontrado."); return; }
+            if (p == null)
+            {
+                Console.WriteLine("No encontrado.");
+                return;
+            }
 
             Console.WriteLine($"Actual: {p}");
             Console.Write("Nuevo nombre (Enter para omitir): ");
             string nom = Console.ReadLine();
-            if (!string.IsNullOrWhiteSpace(nom)) p.Nombre = nom;
+
+            if (!string.IsNullOrWhiteSpace(nom))
+                p.Nombre = nom;
 
             Console.Write("Nuevo precio (Enter para omitir): ");
             string preStr = Console.ReadLine();
-            if (double.TryParse(preStr, out double pre) && pre > 0) p.Precio = pre;
+
+            if (double.TryParse(preStr, out double pre) && pre > 0)
+                p.Precio = pre;
 
             inventario.GuardarEnArchivo(archivoDatos);
             Console.WriteLine("¡Modificado con éxito!");
         }
+
         private void EliminarProducto()
         {
             Console.WriteLine("--- ELIMINAR PRODUCTO ---");
             Console.Write("Código del producto a eliminar: ");
             string codigo = Console.ReadLine();
+
             if (inventario.EliminarPorCodigo(codigo))
             {
                 inventario.GuardarEnArchivo(archivoDatos);
@@ -406,18 +501,22 @@ namespace SEM5_C_SistemaAruma
                 Console.WriteLine("No se pudo eliminar o no existe.");
             }
         }
+
         private void RegistrarVenta()
         {
             Console.WriteLine("--- REGISTRAR VENTA ---");
             Console.Write("Ingrese el código del producto a vender: ");
             string codigo = Console.ReadLine();
+
             Producto prod = inventario.BuscarPorCodigo(codigo);
             if (prod == null)
             {
                 Console.WriteLine("Producto no encontrado en el inventario.");
                 return;
             }
+
             Console.WriteLine($"\nProducto encontrado: {prod.Nombre} | Stock disponible: {prod.Stock} | Precio: S/{prod.Precio:F2}");
+
             int cantidad;
             do
             {
@@ -440,7 +539,7 @@ namespace SEM5_C_SistemaAruma
         }
     }
 
-    // 4. CLASE PRINCIPAL
+    // 5. CLASE PRINCIPAL
     class Program
     {
         static void Main(string[] args)
