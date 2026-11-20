@@ -1,0 +1,15 @@
+P008|Champú Reparación Intensiva Pantene|Cuidado Capilar|24.50|40
+P010|Agua Micelar Garnier Todo en 1|Cuidado Facial|32.90|35
+P012|Corrector Fit Me Maybelline|Maquillaje|35.00|25
+P011|Delineador Líquido Tattoo Liner Maybelline|Maquillaje|38.90|20
+POO3|Máscara de Pestañas Lash Sensational|Maquilaje|39.90|30
+P009|Mascarilla Capilar Aceite de Argan Ogx|Cuidado Capilar|42.00|114
+P001|Labial Matte Maybelline SuperStay|Maquillaje|45.90|25
+P002|Base Liquid Fit Me Maybelline|Maquillaje|52.00|18
+P004|Crema Hidratante Cerave Lotion|Cuidado Facial|68.50|15
+P005|Limpiador Facial Gel Cerave Foaming|Cuidado Facial|74.90|12
+P006|Sérum Ácido Hialurónico L'Oréal Revitalift|Cuidado Facial|85.00|20
+P015|Gel Limpiador Effaclar La Roche-Posay|Cuidado Facial|89.00|18
+P007|Bloqueador Solar Isdin Fotoprotector 50+|Protector Solar|99.00|22
+P013|Rubor Líquido Rare Beauty Soft Pinch|Maquillaje|115.00|10
+P014|Polvo Traslúcido Laura Mercier|Maquillaje|180.00|8
